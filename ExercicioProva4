@@ -1,0 +1,90 @@
+import random
+
+numeros = [1,2,3,4,5]
+alunos = {"20161" : "duda" , "20162" : "joão" , "20163" : "maria"}
+mensagemProva4 = ""
+
+print("Seja bem vindo(a) ao Programa da Prova 4")
+print("Lista é uma coleção ordenada de valores , chamados elementos ou itens podendo ser strings, inteiros ou outros tipos de dados.Exemplo:",numeros)
+print("Dicionario é um conjuto de pares chave e valor como uma lista sendo que pode apresentar uma string ou outro tipo de dado como chave ou indice.Exemplo:",alunos)
+print("Estou pronto para manipular listas e dicionários na prova!")
+
+sorteados = []
+for i in range(0,20):
+    numero = random.randint(1,100)
+    sorteados.append(numero)
+
+posicao = 0    
+for n in sorteados:
+    print("O valor da linha :", posicao,"é", n )
+    posicao +=1
+
+mensagemProva4 = "Prova sobre manipulação de listas e dicionários,"
+
+print(len(mensagemProva4))
+
+mensagemProva4 = mensagemProva4 + " Prova de número 4"
+print(mensagemProva4)
+
+
+
+def adicionarSorteado(sorteados):
+    numero = random.randint(1,100)
+    sorteados.append(numero)
+
+def adicionarAluno(alunos,matricula,nome):
+    alunos[matricula] = nome
+
+def exibirAlunos(alunos):
+    for matricula,nome in alunos.items():
+        print("Aluno:",nome,",Matrícula:",matricula)
+
+def buscarAluno(alunos,matricula):
+    print(alunos.get(matricula))
+
+# Funcao adicionarSorteados
+        
+adicionarSorteado(sorteados)
+print(sorteados)
+
+# Funcao adicionarAluno
+
+matricula = int(input("Digite a matricula do aluno:"))
+nome = str(input("Digite o nome do aluno:"))
+adicionarAluno(alunos,matricula,nome)
+print(alunos)
+
+# Funcao exibirAlunos
+print("\nFuncao exibirAlunos")
+exibirAlunos(alunos)
+
+# Funcao buscarAluno
+print("\nFuncao buscarAluno")
+matricula = str(input("Digite a matricula do aluno:"))
+buscarAluno(alunos,matricula)
+
+
+
+
+
+print("Questão 3")
+
+print("Recursividade é o ato ou ação de executar uma função dentro da mesma função ")
+
+global soma 
+soma = 0
+def recursiva(x):
+    global soma
+    soma+= x
+    if (x == 0):
+        return soma
+    return recursiva(x-1)
+
+
+x = int(input("Digite o número:"))
+print(recursiva(x))    
+
+
+
+
+# alunos : Maria Eduarda e Lucas Dantas 
