@@ -23,9 +23,8 @@ mensagemProva4 = "Prova sobre manipulação de listas e dicionários,"
 
 print(len(mensagemProva4))
 
-mensagemProva4 = mensagemProva4 + " Prova de número 4"
+mensagemProva4 = mensagemProva4 + ".Prova de número 4."
 print(mensagemProva4)
-
 
 
 def adicionarSorteado(sorteados):
@@ -64,9 +63,6 @@ matricula = str(input("Digite a matricula do aluno:"))
 buscarAluno(alunos,matricula)
 
 
-
-
-
 print("Questão 3")
 
 print("Recursividade é o ato ou ação de executar uma função dentro da mesma função ")
@@ -85,6 +81,4 @@ x = int(input("Digite o número:"))
 print(recursiva(x))    
 
 
-
-
-# alunos : Maria Eduarda e Lucas Dantas 
+# ALUNOS: Maria Eduarda e Lucas Dantas 
